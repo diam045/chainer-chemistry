@@ -73,7 +73,7 @@ class ImageVisualizer(BaseVisualizer):
             if image.shape[:2] != saliency_image.shape[:2]:
                 self.logger.warning(
                     'saliency and image height or width is different\n'
-                    'saliency_image.shape {}, image.shape [}'
+                    'saliency_image.shape {}, image.shape {}'
                     .format(saliency_image.shape, image.shape))
 
         # Normalize to [-1, 1] or [0, 1]
